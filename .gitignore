@@ -16,6 +16,3 @@ predict.py
 model/*.keras
 model/*.h5
 !model/resnet_ecg.h5
-
-/model
-model
