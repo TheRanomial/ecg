@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: medihelp-ecg-inference
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: ECG_MODEL_PATH
+        value: /app/model/resnet_ecg.h5

@@ -1,0 +1,16 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+# Training artifacts not needed for inference deploy
+dataset
+train.py
+prepare_data.py
+test.py
+predict.py
+Labels.csv

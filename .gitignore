@@ -1,0 +1,21 @@
+# Local env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Training data/artifacts not needed for inference deploy
+dataset/
+Labels.csv
+train.py
+prepare_data.py
+test.py
+predict.py
+
+# Keep only the inference model file used by app.py
+model/*.keras
+model/*.h5
+!model/resnet_ecg.h5
+
+/model
+model
